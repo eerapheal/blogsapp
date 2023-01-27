@@ -24,6 +24,9 @@
 
 # 📖 Blog App <a name="about-project"></a>
 
+# 📖 Description <a name="Description-Note"></a>
+This Blog app is a classic example of a blog website. it have  full functional Features that will show the list of posts and empower readers to interact with them by adding  comments and liking posts. End users can also create posts when is completed.
+
 ## 🛠 Built With <a name="built-with"></a>
 
 - Ruby on Rails
