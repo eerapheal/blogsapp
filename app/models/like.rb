@@ -1,13 +1,8 @@
 class Like < ApplicationRecord
-  has_many :likes, foreign_key: 'posts_id'
-  has_many :comments, foreign_key: 'posts_id'
-  belongs_to :author, class_name: 'User', dependent: :destroy, foreign_key: 'author_id'
+  belongs_to :post
+  belongs_to :author, class_name: 'User', foreign_key: 'author_id'
 
-  def update_posts_couter
-    author.increment!(:posts_counter)
-  end
-
-  def last_five_comments
-    comments.last(5)
+  def update_likes_counter
+    update(likes_counter: likes.count)
   end
 end
