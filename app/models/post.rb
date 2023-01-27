@@ -11,7 +11,6 @@ class Post < ApplicationRecord
   validates :author_id, presence: true, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
   validates :likes_counter, presence: true, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
 
-
   def last_five_comments
     comments.last(5)
   end
