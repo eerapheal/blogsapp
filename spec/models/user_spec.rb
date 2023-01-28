@@ -19,7 +19,7 @@ RSpec.describe User, type: :model do
   it 'User should have a bio' do
     expect(subject.bio).to be_present
   end
-  it 'Likes Counter attribute should be greater or equal to zero' do
+  it 'Post Counter attribute should be greater or equal to zero' do
     subject.posts_counter = -1
     expect(subject).to_not be_valid
   end
