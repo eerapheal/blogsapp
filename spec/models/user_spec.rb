@@ -27,4 +27,8 @@ RSpec.describe User, type: :model do
     subject.name = Faker::Lorem.characters(number: 251)
     expect(subject).to_not be_valid
   end
+
+  it 'Return last_three_posts for user' do
+    expect(subject.last_three_posts).to eq([])
+  end
 end
