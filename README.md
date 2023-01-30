@@ -25,7 +25,7 @@
 # 📖 Blog App <a name="about-project"></a>
 
 # 📖 Description <a name="Description-Note"></a>
-This Blog app is a classic example of a blog website. it have  full functional Features that will show the list of posts and empower readers to interact with them by adding  comments and liking posts. End users can also create posts when is completed.
+This Blog app is a classic example of a blog website. it have  full functional Features that will show the list of posts and empowers readers to interact with them by adding  comments and liking posts. End users can also create posts when is completed.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -34,8 +34,10 @@ This Blog app is a classic example of a blog website. it have  full functional F
 
 ### Key Features <a name="key-features"></a>
 
-- Gitflow
-- Github flow 
+- Likes
+- Comments
+- Posts
+- Users
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -63,6 +65,22 @@ https://github.com/eerapheal/blogsapp.git
   
 ```
 blogsapp
+
+### Istall
+install this project with:
+  bundle install
+  rails db:create
+  rails db:migrate
+
+### Start 
+To start the application, run the following command
+```
+rails server
+```
+### Run tests 
+```
+rspec
+```
 ### Usage
 
 To run the project, run `ruby <filename>` in your terminal
@@ -112,8 +130,6 @@ If you like this project please give it a star
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](https://github.com/eerapheal/blogsapp/blob/add-license-V1.2/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
