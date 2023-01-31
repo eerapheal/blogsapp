@@ -1,6 +1,6 @@
 class PostController < ApplicationController
   def index
-      puts :posts
+    puts :posts
   end
 
   def show
