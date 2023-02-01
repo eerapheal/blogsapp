@@ -112,7 +112,12 @@ To run the project, run `ruby <filename>` in your terminal
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
+##### Contributions, issues, and feature requests are welcome!
+- Fork it
+- Create your feature branch (git checkout -b my-new-feature)
+- Commit your changes (git commit -am 'Add some feature')
+- Push to the branch (git push origin my-new-feature)
+- Create new Pull Request.
 
 Feel free to check the [issues page](https://github.com/eerapheal/blogsapp/issues).
 
