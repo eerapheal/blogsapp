@@ -55,7 +55,6 @@
   .posts-section,
   article {
     padding: 40px;
-    box-shadow: 0 0 4px 2px rgb(63, 60, 60);
   }
   
   .user-card {
@@ -65,7 +64,7 @@
   }
   
   .profile-picture {
-    width: 250px;
+    width: 150px;
     height: 100px;
   }
   
@@ -88,25 +87,6 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
-  
-  .post {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    border: 1px solid rgb(206, 194, 218);
-    padding: 10px;
-  }
-  
-  .post-card {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-  
-  .posts-list > .post-card {
-    border: 1px solid rgb(206, 194, 218);
-    padding: 10px;
   }
   
   .post-counters {
