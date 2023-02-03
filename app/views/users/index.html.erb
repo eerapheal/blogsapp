@@ -1,21 +1,7 @@
-<h1>Here is a list of users</h1>
-
-<section>
+<div>
+<ul class="users-list">
 <% @users.each do |user| %>
-<%= link_to user_path(user) do %>
-<div >
-  <div>
-    <img src="<%= user.photo %>" /> 
-  </div>
-  <div>
-    <h2>
-       <%= user.name %>
-    </h2>
-    <label>
-    Number of post<%= user.posts_counter %>
-    </label>
-  </div>
-</div>
-<%end %>
+  <%= render partial: "partials/user", locals: {user: user} %>
 <% end %>
-</section>
+</ul
+</div>
