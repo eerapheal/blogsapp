@@ -14,4 +14,134 @@
  *= require_self
  */
 
- 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  body {
+    padding: 49px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 30px; */
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* USERS PAGE */
+  .users-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .user-card,
+  .bio-section,
+  .posts-section,
+  article {
+    padding: 40px;
+    box-shadow: 0 0 4px 2px rgb(63, 60, 60);
+  }
+  
+  .user-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .profile-picture {
+    width: 250px;
+    height: 100px;
+  }
+  
+  .user-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .bio-section,
+  .posts-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .posts-list,
+  .posts-container,
+  .comments-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .post {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid rgb(206, 194, 218);
+    padding: 10px;
+  }
+  
+  .post-card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .posts-list > .post-card {
+    border: 1px solid rgb(206, 194, 218);
+    padding: 10px;
+  }
+  
+  .post-counters {
+    width: fit-content;
+    align-self: flex-end;
+    font-weight: 700;
+  }
+  
+  .comments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .comment-author {
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .main-post {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .main-post > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+  }
