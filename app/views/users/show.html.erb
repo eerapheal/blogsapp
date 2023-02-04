@@ -1,1 +1,21 @@
-<h1>Here is a list of posts for given user</h1>
+<%= render partial: "partials/user", locals: {user: @user} %>
+
+<section class="bio-section">
+  <h2>Bio</h2>
+  <p><%= @user.bio %></p>
+</section>
+
+<section class="posts-section">
+  <h2>Num of Posts</h2>
+  <div class="posts-container">
+    <ul class="posts-list">
+    <% @posts.each do |post| %>
+      <%= render partial: "partials/post", locals: {post: post} %>
+    <% end %>
+    </ul>
+  </div>
+  <%= link_to user_posts_path(@user.id) do %>
+    <button>Show all posts</button>
+  <% end %>
+
+</section>
