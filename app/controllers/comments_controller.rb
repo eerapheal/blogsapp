@@ -1,13 +1,13 @@
 class CommentsController < ApplicationController
   def create
-    @like = Like.new(
+    @comment = Comment.new(
+      text: params[:text],
       post: Post.find(params[:post_id]),
-      author: User.find(params[:author_id])
+      author: User.find(params[:user_id])
     )
 
-    return unless @like.save
+    return unless @comment.save
 
-        redirect_to user_post_path(@like.author_id, @like.post_id)
-    end
+    redirect_to request.original_url
   end
 end
