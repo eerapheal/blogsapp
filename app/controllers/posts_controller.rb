@@ -21,7 +21,6 @@ class PostsController < ApplicationController
 
   def create
     user = current_user
-    puts user
     @post = Post.new(
       title: params[:post][:title],
       text: params[:post][:text],
