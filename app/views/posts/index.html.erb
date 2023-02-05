@@ -1,7 +1,7 @@
 <%= render partial: "partials/user", locals: {user: @user} %>
 
 <section class="posts-section">
-  <h3> Num of Posts</h3>
+  <h2> Num of Posts</h2>
   <div class="posts-container">
     <ul class="posts-list">
     <% @posts.each do |post| %>
@@ -15,8 +15,12 @@
           </li>
         <% end %>
       </ul>
+      <%= render partial: "partials/comment_form", locals: {post: post, author: @recent_user, user_id: @user.id} %>
       </div>
     <% end %>
     </ul>
+      <%= link_to new_user_post_path(@user.id) do %>
+      <button>Create new Post</button>
+      <% end %>
   </div>
 </section>
