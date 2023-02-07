@@ -3,7 +3,9 @@ require 'rails_helper'
 RSpec.describe 'User index page', type: :feature do
   describe 'User index page process' do
     before(:each) do
-      @user = User.create(name: 'ralph', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'I am a Ruby on Rails Developer',
+      @user = User.create(name: 'ralph',
+                          photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
+                          bio: 'I am a Ruby on Rails Developer',
                           posts_counter: 2)
       visit users_path
     end

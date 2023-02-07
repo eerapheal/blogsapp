@@ -3,7 +3,9 @@ require 'rails_helper'
 RSpec.describe 'User index page', type: :feature do
   describe 'User show page process' do
     before(:each) do
-      @user = User.create(name: 'ralph', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'I am a biology teacher',
+      @user = User.create(name: 'ralph',
+                          photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
+                          bio: 'I am a biology teacher',
                           posts_counter: 2)
       Post.create(author: @user, title: 'My first post', text: 'This is my first post')
       Post.create(author: @user, title: 'My second post', text: 'This is my second post')
@@ -44,7 +46,8 @@ RSpec.describe 'User index page', type: :feature do
       expect(page).to have_current_path(user_post_path(@user, @last_post))
     end
 
-    it "When I click to Show all posts, it should redirects me to the user's post's index page" do
+    it "When I click to Show all posts, it should
+     redirects me to the user's post's index page" do
       click_link('Show all posts')
       expect(page).to have_current_path(user_posts_path(@user))
     end

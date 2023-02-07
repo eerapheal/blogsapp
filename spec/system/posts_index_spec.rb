@@ -3,9 +3,13 @@ require 'rails_helper'
 RSpec.describe 'Post index page', type: :feature do
   describe 'Post index page process' do
     before(:each) do
-      @user = User.create(name: 'ralph', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'I am a biology teacher',
+      @user = User.create(name: 'ralph',
+                          photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
+                          bio: 'I am a biology teacher',
                           posts_counter: 2)
-      @user2 = User.create(name: 'cake', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'I am a math teacher',
+      @user2 = User.create(name: 'cake',
+                           photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
+                           bio: 'I am a math teacher',
                            posts_counter: 3)
       @first_post = Post.create(author: @user, title: 'My first post', text: 'This is my first post')
       Comment.create(post: @first_post, author: @user2, text: 'This the first post comment')
