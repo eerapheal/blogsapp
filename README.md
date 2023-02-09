@@ -97,6 +97,11 @@ To run the project, run `ruby <filename>` in your terminal
 - Twitter: [@ekpenisiraphael](https://twitter.com/ekpenisiraphael)
 - LinkedIn: [ekpenisi-e-raphael-9678a221a](https://www.linkedin.com/in/ekpenisi-e-raphael-9678a221a/)
 
+👤 **Mohamed Abdulhakim**
+Software Developer | Javascript, React, Redux, MongoDB, PostgreSql, Ruby. | Good with Frontend. #OPENTOWORK
+- GitHub: [@MohamedCK](https://github.com/MohamedCK)
+- LinkedIn: [@mohamed-cake](https://www.linkedin.com/in/mohamed-cake/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
