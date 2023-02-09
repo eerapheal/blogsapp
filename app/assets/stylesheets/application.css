@@ -12,104 +12,49 @@ img {
 }
 
 body {
-  padding: 49px;
+ padding: 0 39px; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  min-height: 100vh;
+  min-height: 100vh; 
+  background-image: linear-gradient(#e66465, #9198e5);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-button {
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-}
-
-/* USERS PAGE */
-.users-list {
+.homs-page {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.user-card,
-.bio-section,
-.posts-section,
-article {
-  padding: 20px;
+  align-items: center;
+    justify-content: center;
+  flex-direction: row;
 }
 
 .user-card {
   display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.profile-picture {
-  width: 150px;
-  height: 100px;
+  margin-top: 30px;
+align-items: center;
+border: 3px solid seashell;
+padding: 40px 20px;
+flex-direction: row;
+box-shadow: 26px 66px 50px -24px rgba(13,11,1,0.43);
 }
 
 .user-info {
   display: flex;
-  gap: 20px;
-  align-items: center;
+  justify-content: center;
+margin-left: 90px;
+flex-direction: row;
+
 }
 
-.bio-section,
-.posts-section {
+.num-post {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  margin-left: 90px;
+  text-align: center;
+  border: 3px solid seashell;
 }
-
-.posts-list,
-.posts-container,
-.comments-section {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.post-counters {
-  width: fit-content;
-  align-self: flex-end;
-  font-weight: 700;
-}
-
-.comments-list {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.comment-author {
-  text-decoration: underline;
-  font-weight: 600;
-}
-
-article {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-}
-
-.main-post {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.main-post > div {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  align-items: center;
-}
-
 
 form {
   width: 100%;
@@ -124,4 +69,34 @@ input {
   border: 1px solid rgb(168, 158, 250);
   padding: 10px;
   width: 100%;
+}
+
+.reminder {
+  display: flex;
+align-items: center;
+flex-direction: row;
+justify-content: center;
+}
+.login-page {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin-top: 45px;
+}
+
+.welcome {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+  color: #333fff;
+
+}
+
+
+.input-div {
+  display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }

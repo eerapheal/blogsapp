@@ -1,3 +1,4 @@
+<div class="login-page">
 <%= render partial: "partials/user", locals: {user: @user} %>
 
 <section class="bio-section">
@@ -20,3 +21,4 @@
 
 </section>
 <%= button_to "Sign out", destroy_user_session_path, method: :delete, data: {turbo: false}%>
+</div>
