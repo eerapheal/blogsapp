@@ -2,12 +2,12 @@
 <%= render partial: "partials/user", locals: {user: @user} %>
 
 <section class="bio-section">
-  <h2>Bio</h2>
+  <h2 class="bio">Bio</h2>
   <p><%= @user.bio %></p>
 </section>
 
 <section class="posts-section">
-  <h2>Num of Posts</h2>
+  <h2 class="num-post">Num of Posts</h2>
   <div class="posts-container">
     <ul class="posts-list">
     <% @posts.each do |post| %>
@@ -16,9 +16,11 @@
     </ul>
   </div>
   <%= link_to user_posts_path(@user.id) do %>
-    <button>Show all posts</button>
+    <button class="numPostBtn">Show all posts</button>
   <% end %>
 
 </section>
+<div class="logoutbtn">
 <%= button_to "Sign out", destroy_user_session_path, method: :delete, data: {turbo: false}%>
+<div>
 </div>
