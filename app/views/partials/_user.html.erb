@@ -1,15 +1,15 @@
-<div class="user-card">
-  <div class="img-div">
+<div class="card">
+ <ul class="d-flex flex-row justify-content-around align-items-center list list-group-flush">
+  <li class="list-group">
     <img src= <%= user.photo %> alt="User profile picture" class="profile-pic">
-  </div>
-  <div class="user-info">
-    <div class="user-name">
-      <%= link_to user_path(user.id) do %>
-        <h2><%= user.name %></h2>
-      <% end %>
-    </div>
-    <div class="num-post">
-      <p><%= user.posts_counter %> Num of posts.</p>
-    </div>
-  </div>
+  </li>
+  <li class="list-group p-2">
+    <%= link_to user_path(user.id) do %>
+      <h2><%= user.name %></h2>
+    <% end %>
+  </li>
+  <li class="list-group pe-2">
+    <p><%= user.posts_counter %>posts</p>
+  </li>
+ </ul>
 </div>

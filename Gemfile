@@ -72,10 +72,13 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
-
+# rspec faker helper
 gem 'faker'
 
 # Gemfile devise
 gem 'devise', '~> 4.8'
-
+#mail helper
 gem 'letter_opener'
+
+#role setter
+gem 'cancancan'
